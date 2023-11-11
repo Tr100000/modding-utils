@@ -28,4 +28,6 @@ dependencies {
     modLocalRuntime "maven.modrinth:blur-fabric:3.1.0"
     modLocalRuntime "maven.modrinth:midnightlib:1.4.1-fabric"
     modLocalRuntime "maven.modrinth:satin-api:1.14.0"
+    
+    modLocalRuntime annotationProcessor("io.github.llamalad7:mixinextras-fabric:0.2.0")
 }
