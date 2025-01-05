@@ -1,0 +1,23 @@
+repositories {
+    maven {
+        url = "https://maven.covers1624.net"
+        content {
+            includeGroup "net.covers1624"
+        }
+    }
+}
+
+dependencies {
+    localRuntime "net.covers1624:DevLogin:0.1.0.5"
+}
+
+loom {
+    runs {
+        clientWithLogin {
+            client()
+            ideConfigGenerated = true
+            programArgs "--launch_target", "net.fabricmc.loader.impl.launch.knot.KnotClient"
+            mainClass.set "net.covers1624.devlogin.DevLogin"
+        }
+    }
+}
