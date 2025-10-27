@@ -30,7 +30,7 @@ jobs:
       - name: Build Artifacts
         run: ./gradlew build --no-daemon
       - name: Upload Atrifacts
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v5
         with:
           name: artifacts
           path: ${{ inputs.artifacts }}
