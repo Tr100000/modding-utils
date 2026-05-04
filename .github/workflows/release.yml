@@ -37,7 +37,7 @@ jobs:
           name: artifacts
           path: ${{ inputs.artifacts }}
       - name: upload release assets
-        uses: AButler/upload-release-assets@v3.0
+        uses: AButler/upload-release-assets@v4.0
         with:
           files: ${{ inputs.artifacts }}
           repo-token: ${{ secrets.token }}
